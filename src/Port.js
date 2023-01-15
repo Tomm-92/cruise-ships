@@ -10,7 +10,7 @@ class Port {
 
   removeShip(ship) {
     const index = this.ships.indexOf(ship);
-    if (index !== -1) {
+    if (index >= 0) {
       this.ships.splice(index, 1);
     } else {
       throw new Error('No ships with that name are currently docked');
